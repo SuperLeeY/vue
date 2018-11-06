@@ -1,0 +1,17 @@
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+fieldset, img { border:none; }
+address, caption, cite, code, dfn, th, var { font-style:normal; font-weight:normal; }
+ul, ol { list-style:none; }
+input { padding-top:0; padding-bottom:0;}
+input::-moz-focus-inner { border:none; padding:0; }
+select, input { vertical-align:middle; }
+select, input, textarea { font-size:12px; margin:0; font-family: 'Microsoft YaHei,Helvetica Neue,Helvetica,STHeiTi,Arial,sans-serif';}
+input[type="text"], input[type="password"], textarea { outline-style:none; -webkit-appearance:none; }
+textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus {border-color: rgba(242, 145, 73, 0.8) !important;box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(242, 145, 73, 0.6);outline: 0 none;}
+textarea { resize:none; }
+table { border-collapse:collapse; }
+body { color:#000; font-size: 12px; font-family: 'Microsoft YaHei,Helvetica Neue,Helvetica,STHeiTi,Arial,sans-serif'; background:#f8f8f8;}
+.clearfix:after { content:"."; display:block; height:0; visibility:hidden; clear:both; }
+.clearfix { zoom:1; }
+.clearit { clear:both; height:0; font-size:0; overflow:hidden; }
+a, a:link, a:visited, a:hover, a:focus{ text-decoration:none; }
