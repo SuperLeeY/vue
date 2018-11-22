@@ -2,7 +2,7 @@ const path = require('path');
 const glob = require('glob');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const Uglify = require('uglifyjs-webpack-plugin');
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
@@ -32,7 +32,6 @@ module.exports = {
 		rules: [
             { 
 				test: /\.js$/, 
-				exclude: /node_modules/,
 				use: 'babel-loader'
             },
             {
@@ -51,7 +50,7 @@ module.exports = {
 	},
 	plugins: [
         new ExtractTextPlugin('/css/[name].css'),
-        new Uglify(),
+        new UglifyJSPlugin(),
         new VueLoaderPlugin(),
         new CleanWebpackPlugin(['dist'])
     ],
@@ -71,6 +70,9 @@ module.exports = {
         ]
     },
     resolve: {
-        extensions: ['.js', '.vue', '.css']
+        extensions: ['.js', '.vue', '.css'],
+        alias: {
+            'vue': 'vue/dist/vue.js',
+        }
     }
 };
