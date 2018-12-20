@@ -64,6 +64,7 @@ module.exports = {
         host: '10.222.32.52',
         port: '8080',
         open: true,
-        inline: true
+        inline: true,
+        openPage: 'src/pages/'
     }
 };
